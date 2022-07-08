@@ -9,6 +9,7 @@ class GetPortfolioController extends Controller
 {
     public function __invoke(Request $request)
     {
+        //prueba para desarrollo
         $portfolio = [
             ['title' => 'Proyecto #1'],
             ['title' => 'Proyecto #2'],
