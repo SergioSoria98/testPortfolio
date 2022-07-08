@@ -7,7 +7,6 @@ use Illuminate\Routing\Controller;
 
 class GetPortfolioController extends Controller
 {
-    //Esto es un comentario para pushear.    
     public function __invoke(Request $request)
     {
         $portfolio = [
