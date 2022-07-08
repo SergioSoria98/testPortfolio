@@ -15,6 +15,7 @@ class GetPortfolioController extends Controller
             ['title' => 'Proyecto #2'],
             ['title' => 'Proyecto #3'],
             ['title' => 'Proyecto #4'],
+            ['title' => 'Proyecto #5']
         ];
 
         return view('portfolio', compact('portfolio'));
