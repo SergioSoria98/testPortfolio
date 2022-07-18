@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GetPortfolioController;
-
+use App\Http\Controllers\PostMessagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +29,6 @@ Route::view('/about', 'about')->name('about');
 Route::get('/portfolio', GetPortfolioController::class);
 Route::view('/contact', 'contact')->name('contact');
 
-
+Route::post('/contact', PostMessagesController::class);
 
 
