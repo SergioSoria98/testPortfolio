@@ -9,8 +9,13 @@ class PostMessagesController extends Controller
 {
     public function __invoke(Request $request)
     {
-       
-        return 'Procesar el formulario';
+        request()->validate([
+            'name' => 'required',
+            'email' => 'required'
+
+        ]);
+      
+       return 'Datos validados';
     }
    
 }
